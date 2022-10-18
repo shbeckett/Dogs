@@ -3,7 +3,7 @@ import Treats from "./Treats";
 
 //destructuring props below (although there's only one! Means you can use {name} instead of {props.name})
 export default function Favourite({name}) {
-    const [treat, setTreat] = useState({Doug: 0, Odie:0});
+    const [treat, setTreat] = useState(0);
 
     return (
         <>
