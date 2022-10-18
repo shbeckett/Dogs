@@ -4,7 +4,7 @@ export default function Game(props) {
     const [game, setGame] = useState(0);
 
     useEffect(() => {
-        console.log("this only happens when you change the game")
+        console.log("you changed the game")
     
 
 
@@ -38,7 +38,7 @@ export default function Game(props) {
         <p>Dogs love to play games.</p>
         {/* <p>These hounds particularly like {...options}</p> */}
         <p>Doug and Odie are currently playing {moreOptions[game]}</p>
-        <button onClick={() => setGame(game + 1)}>Change game</button>
+        <button onClick={() => setGame(game + 1)}>New game</button>
         </>
     )
 }
