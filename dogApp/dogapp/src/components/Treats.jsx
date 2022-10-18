@@ -8,7 +8,7 @@ export default function Treats({number}) {
 []); 
 
   useEffect(() => {
-    console.log("More treats!")
+    console.log("More treats! I've got " + number + " now!")
 },
 [number]);
 
