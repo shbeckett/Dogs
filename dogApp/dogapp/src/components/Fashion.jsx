@@ -10,16 +10,13 @@ export default function Fashion({name}) {
 
     return (
         <>
-        <p>This is the Fashion component. Fashion is very important in the canine world.</p>
+        <p>Fashion is very important in the canine world.</p>
         {/* // <p>Your favourite dog {name} is {age} years old and needs a suitable costume.</p>. */}
         <button onClick={toggleImage}>Toggle to show or hide {name}'s new look</button>
+        <br/>
         {showOutfit && <img className="smallimg" src={"images/" + name + "2.jpg"} alt="Snazzy"/>}
         {/* <p>Doesn't he look smart?</p> */}
         
         </>
     )
-    // Fashion.defaultProps = {
-    //     favourite: "Doug",
-    //     age: 13
-    // }
 }

@@ -1,8 +1,10 @@
-import logo from './logo.svg';
 import Profile from './components/Profile';
 import Favourite from './components/Favourite';
 import Game from './components/Game';
 import Fashion from './components/Fashion';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
@@ -17,22 +19,28 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
-        <div>
-          Here are some fabulous pooches.
-          <table>
-            <tr>
-              <td>
-                <Profile name="Doug" age="13" />
+            <h1>Two Heroic Hounds</h1>
+          
+             <table>
+              <tr>
+                  <td>
+                    <Profile name="Doug" age="13" />
                 <button onClick={() => setFavourite("Doug")}>Doug is my favourite</button>
-              </td>
-              <td>
+                <br/>
+                <br/>
+                  </td>
+                  <td>Which<br/>one<br/>
+                     will<br/>you<br/>
+                      choose?<br/><br/><br/><br/><br/></td>
+                  <td>
                 <Profile name="Odie" age="2"/>
                 <button onClick={() => setFavourite("Odie")}>I prefer Odie</button>
-              </td>
-            </tr>        
-          </table>
-        </div>
+                <br/>
+                <br/>
+                  </td>
+                </tr>
+              </table>  
+      
         <div>
           {favourite &&
           <Favourite name={favourite}/>
@@ -46,15 +54,8 @@ function App() {
           <Fashion name={favourite}/>
           }
         </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        
+        </header>
     </div>
   );
 }
