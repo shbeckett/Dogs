@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 //destructuring props below  {favourite} instead of {props.favourite})
+// It takes name as props but it sets its own state to conditionally render or hide a picture when you toggle the button.
 export default function Fashion({name}) {
     const [showOutfit, setShowOutfit] = useState(false);
 
@@ -9,7 +10,7 @@ export default function Fashion({name}) {
 
     return (
         <>
-        <p>This is the Fashion component. Fashion is very important in the canine world. It takes  app as props but it sets its own state to conditionally render or hide a picture when you toggle the button.</p>
+        <p>This is the Fashion component. Fashion is very important in the canine world.</p>
         {/* // <p>Your favourite dog {name} is {age} years old and needs a suitable costume.</p>. */}
         <button onClick={toggleImage}>Toggle to show or hide {name}'s new look</button>
         {showOutfit && <img className="smallimg" src={"images/" + name + "2.jpg"} alt="Snazzy"/>}

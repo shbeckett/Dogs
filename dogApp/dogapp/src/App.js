@@ -34,13 +34,17 @@ function App() {
           </table>
         </div>
         <div>
+          {favourite &&
           <Favourite name={favourite}/>
+          }
         </div>
         <div>
           <Game />
         </div>
         <div>
+          {favourite &&
           <Fashion name={favourite}/>
+          }
         </div>
         <a
           className="App-link"
