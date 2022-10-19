@@ -22,25 +22,18 @@ function App() {
       <header className="App-header">
             <h1>Two Heroic Hounds</h1>
           
-             <table>
-              <tr>
-                  <td>
+            <ErrorBoundary /> 
+              <Container >
                     <Profile name="Doug" age="13" />
                 <button onClick={() => setFavourite("Doug")}>Doug is my favourite</button>
-                <br/>
-                <br/>
-                  </td>
-                  <td>Which<br/>one<br/>
-                     will<br/>you<br/>
-                      choose?<br/><br/><br/><br/><br/><br/></td>
-                  <td>
+                
+                  
+                  
                 <Profile name="Odie" age="2"/>
                 <button onClick={() => setFavourite("Odie")}>I prefer Odie</button>
-                <br/>
-                <br/>
-                  </td>
-                </tr>
-              </table>  
+                </Container>
+            <ErrorBoundary />
+                  
       
         <div>
           {favourite &&
