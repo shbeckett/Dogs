@@ -4,15 +4,7 @@ export default function Game(props) {
     const [game, setGame] = useState(0);
 
     useEffect(() => {
-        console.log("you changed the game")
-    
-
-
-    },
-    [game]);
-
-    useEffect(() => {
-        console.log("this happens when the component is rendered for the first time")
+        console.log("this happens when the Game component is rendered for the first time")
         
     },
     []); 
@@ -24,14 +16,14 @@ export default function Game(props) {
     }, [game]);
     
     const options = ["skittles", "frisbee", "cat chasing", 'tail chasing', 'stick chasing', 'swimming'];
-    console.log({...options});
+    //console.log({...options});
     const moreOptions = ["post stealing", "squirrel chasing", ...options, "food stealing"];
-    console.log({...moreOptions});
+    //console.log({...moreOptions});
     const mergedOptions = [...options, ...moreOptions];
-    console.log({...mergedOptions});
+    //console.log({...mergedOptions});
     const names = "Doug and Odie";
-    const processedNames = [...names];
-    console.log(processedNames);
+    //const processedNames = [...names];
+   // console.log(processedNames);
     // Playing with the spread operator to access the contents of an array and to merge arrrays / insert arrays within others it even works with strings
         return (
         <>

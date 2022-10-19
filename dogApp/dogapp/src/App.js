@@ -2,6 +2,7 @@ import Profile from './components/Profile';
 import Favourite from './components/Favourite';
 import Game from './components/Game';
 import Fashion from './components/Fashion';
+import ErrorBoundary from './components/ErrorBoundary';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -31,7 +32,7 @@ function App() {
                   </td>
                   <td>Which<br/>one<br/>
                      will<br/>you<br/>
-                      choose?<br/><br/><br/><br/><br/></td>
+                      choose?<br/><br/><br/><br/><br/><br/></td>
                   <td>
                 <Profile name="Odie" age="2"/>
                 <button onClick={() => setFavourite("Odie")}>I prefer Odie</button>

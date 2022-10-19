@@ -2,13 +2,7 @@ import { useEffect } from "react";
 
 export default function Treats({number}) {
   useEffect(() => {
-    console.log("Wag from the Treats component")
-    
-},
-[]); 
-
-  useEffect(() => {
-    console.log("More treats! I've got " + number + " now!")
+    console.log("Give me more treats! I've got " + number + " now!")
 },
 [number]);
 
